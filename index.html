@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body id="body">
     <header>
         <div class="relative bg-gradient-to-r border-4 border-green-500 from-indigo-500 via-purple-500 to-pink-500 h-[300px]">
             <h1 class="text-9xl text-center font-extrabold uppercase bg-gradient-to-r from-[#f368e0] via-[#222f3e] to-[#1dd1a1] bg-clip-text text-transparent">animes barman</h1>
@@ -32,6 +32,22 @@
             </div>
         </div>
     </header>
+    <!--hero area-->
+  <!--<section>
+        <div class="container mx-auto">
+            <div class="flex justify-between">
+                <div>
+                    <h1 class="text-3xl font-semibold">Hello ! I am assistant of Animesh Barman</h1>
+                    <h2 class="w-[300px] text-xl font-semibold leading-8 mt-4">How can I help you? Feel free to ask me if you have any questions about Animesh ,I will always try to answer questions correctly</h2>
+                </div>
+                <div>
+                    <h1 class="text-3xl font-semibold">My name is Anamika Burman</h1>
+                    <img src="images/assistant.png" class="w-[200px] h-[200px] mx-auto rounded-full ring-2 ring-red-300" alt >
+                </div>
+            </div>
+            <p class="w-[80%] mx-auto text-center mt-[50px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fuga non reiciendis impedit odio eos labore temporibus sapiente est, nihil laboriosam quidem, unde aliquam sint ullam, assumenda nulla mollitia ad?</p>
+        </div>
+    </section>-->  
 
     <!--Main area-->
     <main class="mt-[200px]">
@@ -39,8 +55,54 @@
             <h1 class="text-center text-6xl font-extrabold">Want to do something about Animesh</h1>
             <h3 class="text-center text-3xl font-semibold py-5">Ask questions if you want ...?</h3>
             <hr class="border-2 border-gray-700">
+            <div class="py-6 flex flex-col md:flex-row gap-5 h-[700px]">
+                <div class="w-full md:w-[40%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 overflow-y-scroll touch-pan-y">
+                    <ul class="flex flex-col space-y-4">
+                        <input type="submit" id="qui1" class="btn btn-outline" value="What is your name ?">
+                        <input type="submit" id="qui" class="btn btn-outline btn-primary" value="I Love you">
+                        <input type="submit" id="qui" class="btn btn-outline btn-success" value="What is your name?">
+                        <input type="submit" id="qui" class="btn btn-outline secondary" value="What is your name?">
+                        <input type="submit" id="qui" class="btn btn-outline btn-accent" value="What is your name?">
+                        <input type="submit" id="qui" class="btn btn-outline btn-info" value="What is your name?">
+                        <input type="submit" id="qui" class="btn btn-outline btn-success" value="What is your name?">
+                        <input type="submit" id="qui" class="btn btn-outline btn-warning" value="What is your name?">
+                        <input type="submit" id="qui" class="btn btn-outline btn-error" value="What is your name?">
+                        <input type="submit" id="qui" class="btn btn-outline" value="What is your name?">
+                        <input type="submit" id="qui" class="btn btn-outline btn-primary" value="What is your name?">
+                        <input type="submit" id="qui" class="btn btn-outline btn-success" value="What is your name?">
+                        <input type="submit" id="qui" class="btn btn-outline secondary" value="What is your name?">
+                        <input type="submit" id="qui" class="btn btn-outline btn-accent" value="What is your name?">
+                        <input type="submit" id="qui" class="btn btn-outline btn-info" value="What is your name?">
+                        <input type="submit" id="qui" class="btn btn-outline btn-success" value="What is your name?">
+                        <input type="submit" id="qui" class="btn btn-outline btn-warning" value="What is your name?">
+                        <input type="submit" id="qui" class="btn btn-outline btn-error" value="What is your name?">
+                        <input type="submit" id="qui" class="btn btn-outline" value="What is your name?">
+                        <input type="submit" id="qui" class="btn btn-outline btn-primary" value="What is your name?">
+                        <input type="submit" id="qui" class="btn btn-outline btn-success" value="What is your name?">
+                        <input type="submit" id="qui" class="btn btn-outline secondary" value="What is your name?">
+                        <input type="submit" id="qui" class="btn btn-outline btn-accent" value="What is your name?">
+                        <input type="submit" id="qui" class="btn btn-outline btn-info" value="What is your name?">
+                        <input type="submit" id="qui" class="btn btn-outline btn-success" value="What is your name?">
+                        <input type="submit" id="qui" class="btn btn-outline btn-warning" value="What is your name?">
+                        <input type="submit" id="qui" class="btn btn-outline btn-error" value="What is your name?">
+                    </ul>
+                </div>
+                <div id="askmessage" class="w-full md:w-[60%] bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% p-4">
+                    <form class="flex flex-col justify-center items-center space-y-8" action="">
+                        <div>
+                            <img src="images/assistant.png" class="w-[200px] h-[200px] rounded-full ring-4 ring-white border-2 border-green-500" alt="">
+                            <p class="text-2xl bg-gradient-to-r from-[#fbc531] font-bold via-[#f5f6fa] to-pink-500 bg-clip-text text-transparent text-blue-700">Hello ! I am assistant of Animesh Barman My name is Anamika Burman How can I help you? Feel free to ask me if you have any questions about Animesh ,I will always try to answer questions correctly</p>
+                        </div>
+                        <input type="text" placeholder="Ask your questions..........?" class="input input-bordered input-accent w-full max-w-xs text-xl" id="questions"  />
+                        <button id="send" class="btn btn-outline bg-transparent text-xl">Answer</button>
+                        <textarea id="answer" class="textarea w-full textarea-secondary text-2xl" placeholder="answer ............!"></textarea>
+                    </form>
+                </div>
+            </div>
 
         </div>
     </main>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
